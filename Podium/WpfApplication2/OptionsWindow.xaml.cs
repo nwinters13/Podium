@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+/   The options window allows you to enable and disable the pausing features and the live feedback feature
+/   These two options carry through to the interview screen to prevent the features from being activated
+/   if necessary
+/
+*/
+
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WpfApplication2
 {
@@ -27,6 +22,7 @@ namespace WpfApplication2
             home = null;
         }
 
+        // Saves the options and closes the class out
         private void button_saveoptions_Click(object sender, RoutedEventArgs e)
         {
             home.isPauseEnabled = (bool)this.checkBoxPause.IsChecked;
@@ -34,6 +30,8 @@ namespace WpfApplication2
             this.Close();
         }
 
+        // Updates the form based on what the current settings are
+        //  So that the page reflects the current settings
         public void updateForm()
         {
             this.checkBoxPause.IsChecked = home.isPauseEnabled;

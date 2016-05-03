@@ -10,7 +10,6 @@ namespace WpfApplication2
     using System.Collections.Generic;
     using Microsoft.Kinect;
     using Microsoft.Kinect.VisualGestureBuilder;
-    using System.Threading.Tasks;
 
     /// <summary>
     /// Gesture Detector class which listens for VisualGestureBuilderFrame events from the service
@@ -30,6 +29,9 @@ namespace WpfApplication2
         /// <summary> Gesture frame reader which will handle gesture events coming from the sensor </summary>
         private VisualGestureBuilderFrameReader vgbFrameReader = null;
 
+
+        // Tracking for all gestures implemented
+        // Looks janky because we added in more quickly for Danielle
         public int num_gestures_detected;
         public int num_frames_leaning = 0;
         public int num_frames_touchingface = 0;

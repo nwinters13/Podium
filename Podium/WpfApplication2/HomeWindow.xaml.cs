@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+/ The HomeWindow is the initial window after logign in that shows all of the buttons
+/  It serves as the "hub of the app" before starting an interview
+/
+*/
+
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WpfApplication2
 {
@@ -29,6 +23,7 @@ namespace WpfApplication2
             isFeedbackEnabled = true;
         }
 
+        // The button to start the interview, passes forward the options
         private void button_startinterview_Click(object sender, RoutedEventArgs e)
         {
             InterviewWindow window = new InterviewWindow();
@@ -45,6 +40,7 @@ namespace WpfApplication2
             this.Close();
         }
 
+        // Opens up the options window but DOES NOT close itself because the options window will pass back info
         private void button_options_Click(object sender, RoutedEventArgs e)
         {
             OptionsWindow window = new OptionsWindow();

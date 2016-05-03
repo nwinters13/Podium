@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+/   Score window displays the score you received on your interview
+/       as well as the gesture that the system recognized as the most negative to your interviewing
+/
+/   To do: Display a more in depth score breakdown
+           Allow for scores to be saved
+*/
+
+
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace WpfApplication2
 {
@@ -28,12 +26,14 @@ namespace WpfApplication2
             score = 0;
         }
 
+        // Once the ScoreWindow class has been initialized we can display the score that gets passed in
         public void setScore(float newScore)
         {
             score = newScore;
             this.label_score.Content = score;
         }
 
+        // Once the ScoreWindow is initialized we can also display the worst gesture
         public void setWorstGesture(string gesture_name)
         {
             worst_gesture = gesture_name;
@@ -42,9 +42,11 @@ namespace WpfApplication2
             else
                 this.label_suggestion.Content = "";
         }
+
+        // We can reset back to the original screen using R for reset
+        // To do: fix kinect from breaking this is currently not a button because of a memory issue with the Kinect
         private void Window_KeyDown(object sender, KeyEventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine("hello");
             if (e.Key == Key.R)
             {
                 TitleWindow window = new TitleWindow();
@@ -62,6 +64,7 @@ namespace WpfApplication2
             }
         }
 
+        // Handles ending the interview
         private void button_end_interview_click(object sender, RoutedEventArgs e)
         {
             HomeWindow window = new HomeWindow();

@@ -1,26 +1,22 @@
 ﻿
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    using System.Windows;
-    using System.Windows.Controls;
-    using System.Windows.Data;
-    using System.Windows.Documents;
-    using System.Windows.Input;
-    using System.Windows.Media;
-    using System.Windows.Media.Effects;
-    using System.Windows.Media.Imaging;
-    using System.Windows.Shapes;
-    using System.ComponentModel;
-    using Microsoft.Kinect;
-    using System.Media;
-    using System.Windows.Threading;
+/*
+/   The interview window handles all of the during interview programming
+/       It contains a lot of code including pause functionality, the gesture detections, and audio
+*/
+
+using System;
+using System.Linq;
+using System.Windows;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Effects;
+using System.ComponentModel;
+using Microsoft.Kinect;
+using System.Windows.Threading;
     
 
-    namespace WpfApplication2
-    {
+namespace WpfApplication2
+{
         /// <summary>
         /// Interaction logic for Window1.xaml
         /// </summary>
@@ -38,6 +34,8 @@
             /// <summary> Current status text to display </summary>
             private string statusText = null;
 
+            // Questions array
+            //  TODO: Retrieve from a database
             private string[] questions = new string[] { "Tell me a bit about yourself.", "Tell me about your educational background.", "What are your weaknesses?", "Describe yourself using 3 words.", "How would your friends describe you?" };
             private int question_index;
 
@@ -46,14 +44,17 @@
 
             private MediaPlayer mplayer;
 
+            // Pause functionality
             private DispatcherTimer timer;
             private int counter = 0;
             private bool paused = false;
 
+            // values for feedback shading
             public int step = 2;
             public int current_val = 0;
             public int next_val = 0;
 
+            // Settings variables
             public bool isPauseEnabled = true;
             public bool isFeedbackEnabled = true;
 
@@ -70,10 +71,8 @@
 
                 // only one sensor is currently supported
                 this.kinectSensor = KinectSensor.GetDefault();
-                System.Diagnostics.Debug.WriteLine("oihaoihd");
                 // set IsAvailableChanged event notifier
                 this.kinectSensor.IsAvailableChanged += this.Sensor_IsAvailableChanged;
-                System.Diagnostics.Debug.WriteLine("im out herre befor ei break");
                 // open the sensor
                 this.kinectSensor.Open();
                 System.Diagnostics.Debug.WriteLine(this.kinectSensor.IsAvailable);
@@ -91,31 +90,24 @@
                 this.InitializeComponent();
 
                 // set our data context objects for display in UI
-                //this.DataContext = this;
 
                 // create a gesture detector for each body (6 bodies => 6 detectors) and create content controls to display results in the UI
                 GestureResultView result = new GestureResultView(0, false, false, 0.0f);
                 GestureDetector detector = new GestureDetector(this.kinectSensor, result);
                 this.gestureDetector = detector;
-                // split gesture results across the first two columns of the content grid
-                //ContentControl contentControl = new ContentControl();
-                //contentControl.Content = this.gestureDetector.GestureResultView;
-                //Grid.SetColumn(contentControl, 0);
-                //Grid.SetRow(contentControl, 0);
-                //this.contentGrid.Children.Add(contentControl);
-                System.Diagnostics.Debug.WriteLine("fam");
                 play_audio(question_index);
             }
 
+            // This listener handles all of the pause functionality
             private void Window_KeyDown(object sender, KeyEventArgs e)
             {
                 if(e.Key == Key.Space && this.isPauseEnabled)
                 {
                     if (!paused)
                     {
+                        // Pause code
                         var blur = new BlurEffect();
                         var current = this.Background;
-                        var blurRadius = 5;
                         if (this.isFeedbackEnabled)
                         {
                             this.Background = new SolidColorBrush(Colors.DarkGray);
@@ -128,6 +120,7 @@
                     }
                     else
                     {
+                        // Unpause code
                         this.Effect = null;
                         popup.IsOpen = false;
                         timer.IsEnabled = true;
@@ -137,9 +130,9 @@
                 }
             }
 
+            // The timer tickets in order to keep track of pausing
             void timer_Tick(object sender, EventArgs e)
             {
-                //lblTime.Content = counter;
                 counter++;
             }
 
@@ -268,12 +261,15 @@
                             }
                         }
                     }
+                    
+                    // This code sets the shading for the feedback
                     int num_detected = this.gestureDetector.num_gestures_detected;
                     float ratio = (float)this.gestureDetector.num_gestures_detected / (float)this.gestureDetector.num_gestures;
                     System.Diagnostics.Debug.WriteLine("Num detected: " + this.gestureDetector.num_gestures_detected);
                     System.Diagnostics.Debug.WriteLine("Num total: " + this.gestureDetector.num_gestures);
                     int new_val = ((int)(ratio * 255.0));
                     next_val = new_val;
+                    // Calculates what the change in shading should be
                     if (next_val >= current_val + step)
                     {
                         current_val += step;   
@@ -291,32 +287,18 @@
                         current_val = next_val;
                     }
                 
-                    System.Diagnostics.Debug.WriteLine("Val " + new_val);
                     Brush brush = new SolidColorBrush(Color.FromArgb((byte)current_val, 255, 0, 0));
                     if (this.isFeedbackEnabled)
                     {
+                        // Only changes the fill if feedback is enabled
                         this.rect_feedback.Fill = brush;
                     }
-                    //switch (num_detected)
-                    //{
-                    //    case 0:
-                    //        this.rect_feedback.Fill = new SolidColorBrush(Colors.DarkGreen);
-                    //        break;
-                    //    case 1:
-                    //        this.rect_feedback.Fill = new SolidColorBrush(Colors.Yellow);
-                    //        break;
-                    //    case 2:
-                    //        this.rect_feedback.Fill = new SolidColorBrush(Colors.Crimson);
-                    //        break;
-                    //    case 3:
-                    //        this.rect_feedback.Fill = new SolidColorBrush(Colors.Crimson);
-                    //        break;
-                    //}
                 }
             }
 
 
-
+        // This function acts to end the interviews and pass the necessary values over to the score screen
+        // It initializes the next windows and sets it to the necessary size
         private void button_end_interview_click(object sender, RoutedEventArgs e)
         {
             SelfscoreWindow window = new SelfscoreWindow();
@@ -335,6 +317,7 @@
             int maxValue = gestureArray.Max();
             int maxIndex = gestureArray.ToList().IndexOf(maxValue);
 
+            // Provides the text for the proper worst gesture
             switch (maxIndex)
             {
                 case 0:
@@ -357,26 +340,30 @@
                     break;
             }
 
-
+            // Sets the score and the worst gesture in the next window
             window.setScore(this.gestureDetector.GestureResultView.Overall_Score);
             window.setWorstGesture(gesture_name);
 
             
             window.Show();
+            // Test code to try to fix the weird Kinect issue with resetting
             //this.MainWindow_Closing(this, null);
             //this.kinectSensor.IsAvailableChanged =;
             this.Close();
         }
 
+        // Handles moving to the next question, including playing the audio file of the quesiton
         private void button_next_question_click(object sender, RoutedEventArgs e)
         {
             question_index++;
             if (question_index == questions.Length)
             {
+                // Automatically ends the interview (by programmatically clicking end interview to properly reuse code
                 this.button_end_interview_click(this, null);
             }
             else
             {
+                // We could also overlap if desired
                 //question_index = question_index % questions.Length;
                 this.label.Content = questions[question_index];
                 play_audio(question_index);
@@ -384,6 +371,8 @@
 
         }
 
+        // Code to choose the proper audio file to play based on which question
+        //  TODO: Make an array and programmatically set the text path to allow for more questions
         private void play_audio(int question_index)
         {
             if(question_index == 0)

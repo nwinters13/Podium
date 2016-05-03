@@ -1,17 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿/*
+/   The code behind for the Home Window
+/       We haven't implemented the actual authorization and authentication yet
+/       So it mostly is just to get you to the next window
+*/
+
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WpfApplication2
 {
@@ -24,9 +17,10 @@ namespace WpfApplication2
         {
             this.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             InitializeComponent();
-            System.Diagnostics.Debug.WriteLine(button_login.Content);
         }
 
+        // Takes you to the Home Window
+        // Makes sure sizing remains the same
         private void button_login_Click(object sender, RoutedEventArgs e)
         {
             HomeWindow window = new HomeWindow();

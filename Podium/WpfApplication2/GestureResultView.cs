@@ -139,6 +139,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating whether or not the discrete gesture has been detected
+        /// </summary>
         public int Num_TouchingFace
         {
             get
@@ -156,6 +159,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating whether or not the discrete gesture has been detected
+        /// </summary>
         public int Num_Leaning
         {
             get
@@ -173,6 +179,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating whether or not the discrete gesture has been detected
+        /// </summary>
         public int Num_Crossing
         {
             get
@@ -190,6 +199,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating whether or not the discrete gesture has been detected
+        /// </summary>
         public int Num_Pointing
         {
             get
@@ -207,6 +219,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating whether or not the discrete gesture has been detected
+        /// </summary>
         public int Num_Tilting
         {
             get
@@ -224,6 +239,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating the percentage of time action has been completed
+        /// </summary>
         public float Percent_TouchingFace
         {
             get
@@ -241,6 +259,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating the percentage of time action has been completed
+        /// </summary>
         public float Percent_Leaning
         {
             get
@@ -258,6 +279,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating the percentage of time action has been completed
+        /// </summary>
         public float Percent_Crossing
         {
             get
@@ -275,6 +299,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating the percentage of time action has been completed
+        /// </summary>
         public float Percent_Pointing
         {
             get
@@ -292,6 +319,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating the percentage of time action has been completed
+        /// </summary>
         public float Percent_Tilting
         {
             get
@@ -309,6 +339,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating the percentage of time action has been completed
+        /// </summary>
         public float Overall_Score
         {
             get
@@ -326,6 +359,9 @@ namespace WpfApplication2
             }
         }
 
+        /// <summary> 
+        /// Gets a value indicating the percentage of time action has been completed
+        /// </summary>
         public int Num_Frames
         {
             get
@@ -381,6 +417,7 @@ namespace WpfApplication2
             }
             else
             {
+                // Score calculations for overall score
                 this.Detected = isGestureDetected;
                 this.Num_Frames = frames;
                 this.Num_TouchingFace = touchingface;
@@ -418,6 +455,7 @@ namespace WpfApplication2
             this.num_gestures = num;
         }
 
+        // Dead code that has been killed for now
         public void UpdateCurrentGestureCount(int num)
         {
            // this.numCurrentGestures = num;
