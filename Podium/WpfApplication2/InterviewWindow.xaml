@@ -39,7 +39,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Image x:Name="image" Source="Podium_Hor_Digital_LG_Black.jpeg" Height="36" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="96" Grid.Row="2"/>
+            <Image x:Name="image" Source="Images/PodiumIcon_Black.jpeg" Height="36" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="96" Grid.Row="2"/>
         </Grid>
     </Viewbox>
 </Window>

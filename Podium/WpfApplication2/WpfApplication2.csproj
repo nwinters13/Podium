@@ -120,9 +120,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="hobbies.wav" />
-    <Resource Include="Image2.png" />
-    <Resource Include="Podium_Hor_Digital_LG_Black.jpeg" />
+    <Content Include="Audio\education.mp3" />
+    <Content Include="Audio\friends.mp3" />
+    <Content Include="Audio\hobbies.mp3" />
+    <Content Include="Audio\hobbies.wav" />
+    <Content Include="Audio\three.mp3" />
+    <Content Include="Audio\weakness.mp3" />
+    <Resource Include="Images\PodiumIcon.png" />
+    <Resource Include="Images\PodiumIcon_Black.jpeg" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -138,9 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Image1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

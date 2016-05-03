@@ -20,7 +20,7 @@
             <Label x:Name="label_goodjob" Content="Great Job Friend!" Height="64.693" Margin="0,19.919,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26.667" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF6FCCDD"/>
             <Label x:Name="label_score_text" Content="Your score:" Margin="0,74.658,0,0" FontWeight="Bold" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="51.897" VerticalAlignment="Top"/>
             <Label x:Name="label_score" Content="xxx" Margin="0,126.555,0,90.548" FontWeight="Bold" FontSize="24" HorizontalContentAlignment="Center" d:LayoutOverrides="VerticalAlignment"/>
-            <Image x:Name="image" Source="Image2.png" Height="36" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="96"/>
+            <Image x:Name="image" Source="Images/PodiumIcon.png" Height="36" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="96"/>
             <Label x:Name="label_suggestion" Content="Next time try not to " Height="28.736" Margin="23.16,0,23.391,61.812" VerticalAlignment="Bottom" HorizontalContentAlignment="Center"/>
         </Grid>
     </Viewbox>

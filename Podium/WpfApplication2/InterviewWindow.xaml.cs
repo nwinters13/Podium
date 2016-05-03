@@ -388,27 +388,27 @@
         {
             if(question_index == 0)
             {
-                mplayer.Open(new Uri(@"../../sounds/hobbies.mp3", UriKind.Relative));
+                mplayer.Open(new Uri(@"../../Audio/hobbies.mp3", UriKind.Relative));
                 mplayer.Play();
             }
             else if(question_index == 1)
             {
-                mplayer.Open(new Uri(@"../../sounds/education.mp3", UriKind.Relative));
+                mplayer.Open(new Uri(@"../../Audio/education.mp3", UriKind.Relative));
                 mplayer.Play();
             }
             else if (question_index == 2)
             {
-                mplayer.Open(new Uri(@"../../sounds/weakness.mp3", UriKind.Relative));
+                mplayer.Open(new Uri(@"../../Audio/weakness.mp3", UriKind.Relative));
                 mplayer.Play();
             }
             else if (question_index == 3)
             {
-                mplayer.Open(new Uri(@"../../sounds/three.mp3", UriKind.Relative));
+                mplayer.Open(new Uri(@"../../Audio/three.mp3", UriKind.Relative));
                 mplayer.Play();
             }
             else if (question_index == 4)
             {
-                mplayer.Open(new Uri(@"../../sounds/friends.mp3", UriKind.Relative));
+                mplayer.Open(new Uri(@"../../Audio/friends.mp3", UriKind.Relative));
                 mplayer.Play();
             }
         }

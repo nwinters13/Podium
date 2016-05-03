@@ -8,7 +8,7 @@
         Title="OptionsWindow" Height="350" Width="525" Background="#FF8D8D8D">
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Width="525" Height="350">
-            <Image x:Name="image" Source="Image2.png" Height="36" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="96"/>
+            <Image x:Name="image" Source="Images/PodiumIcon.png" Height="36" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="96"/>
             <Label x:Name="label_score_text" Content="Options" Margin="53.029,10,52.713,0" FontWeight="Bold" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="51.897" VerticalAlignment="Top"/>
             <CheckBox x:Name="checkBoxPause" Content="Pausing Enabled" Margin="189.537,128.824,191.653,0" VerticalAlignment="Top" Height="21.681"/>
             <CheckBox x:Name="checkBoxFeedback" Content="Live Feedback Enabled" Margin="189.537,0,191.653,151.219" VerticalAlignment="Bottom" Height="21.681"/>

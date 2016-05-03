@@ -8,7 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("hobbies.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("audio/education.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("audio/friends.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("audio/hobbies.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("audio/hobbies.wav")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("audio/three.mp3")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("audio/weakness.mp3")]
 [assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("database/rekinectv1.gbd")]
 
 

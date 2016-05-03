@@ -50,7 +50,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Image x:Name="image" Source="Image2.png" Height="65.498" Margin="156.623,18.641,144.42,0" VerticalAlignment="Top"/>
+            <Image x:Name="image" Source="Images/PodiumIcon.png" Height="65.498" Margin="156.623,18.641,144.42,0" VerticalAlignment="Top"/>
         </Grid>
     </Viewbox>
 </Window>
