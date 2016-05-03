@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GestureBuilderFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SolutionFile>
+		<Header>
+			<Date>2016-04-24</Date>
+			<Time>20:29:34.7834742-04:00</Time>
+			<Version>1</Version>
+			<Type>Solution</Type>
+			<ID>6b58b1f0-f34f-499c-9d1f-99888714268c</ID>
+		</Header>
+		<Solution_Data>
+			<Files>
+				<Name />
+				<Content>
+					<Items>
+						<File>ArmsCrossed.vgbproj</File>
+					</Items>
+					<Items>
+						<File>ArmsCrossed.a.vgbproj</File>
+					</Items>
+					<Items>
+						<File>Leaning.vgbproj</File>
+					</Items>
+					<Items>
+						<File>Leaning.a.vgbproj</File>
+					</Items>
+					<Items>
+						<File>Pointing.vgbproj</File>
+					</Items>
+					<Items>
+						<File>Pointing.a.vgbproj</File>
+					</Items>
+					<Items>
+						<File>TiltingHead.vgbproj</File>
+					</Items>
+					<Items>
+						<File>TiltingHead.a.vgbproj</File>
+					</Items>
+					<Items>
+						<File>TouchingFace.vgbproj</File>
+					</Items>
+					<Items>
+						<File>TouchingFace.a.vgbproj</File>
+					</Items>
+				</Content>
+			</Files>
+		</Solution_Data>
+		<UI_State />
+		<Attributes />
+	</SolutionFile>
+</GestureBuilderFile>

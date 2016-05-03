@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfApplication2.TitleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="TitleWindow" Height="350" Width="525" Background="#FF8D8D8D">
+    <Viewbox StretchDirection="Both" Stretch="Uniform">
+        <Grid Height="350" Width="525">
+            <TextBox x:Name="text_email" Margin="192.888,98.575,114.612,0" BorderBrush="Black" Height="30" VerticalAlignment="Top" d:LayoutOverrides="Height" VerticalContentAlignment="Center"  Foreground="Black">
+                <TextBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="Gray" Offset="1.5"/>
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+            <PasswordBox x:Name="passwordBox_password" Margin="192.888,148,114.612,0" BorderBrush="Black" ToolTip="Password" VerticalContentAlignment="Center" VerticalAlignment="Top" Height="27.96" Foreground="Black">
+                <PasswordBox.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0"/>
+                        <GradientStop Color="Gray" Offset="1.5"/>
+                    </LinearGradientBrush>
+                </PasswordBox.Background>
+            </PasswordBox>
+            <Label x:Name="label_email" Content="Email" Margin="112.888,98.575,0,0" BorderBrush="Black" BorderThickness="1,1,0,1" Height="30" VerticalAlignment="Top" d:LayoutOverrides="Height" HorizontalAlignment="Left" Width="80" HorizontalContentAlignment="Right" Background="#FF6FCCDD" Foreground="Black"/>
+            <Label x:Name="label_password" Content="Password" Margin="112.888,148,0,0" BorderBrush="Black" BorderThickness="1,1,0,1" HorizontalAlignment="Left" Width="80" HorizontalContentAlignment="Right" Background="#6FCCDD" VerticalAlignment="Top" Height="27.96"  Foreground="Black"/>
+                <Button x:Name="button_login" Content="Log In" Height="24.5" Margin="223.388,0,230,104" VerticalAlignment="Bottom" Click="button_login_Click" Foreground="Black" BorderBrush="#FF707070">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
+                        <GradientStop Color="#6FCCDD" Offset="0"/>
+                        <GradientStop Color="DarkBlue" Offset="5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="button_register" Content="Register" Height="24.5" Margin="0,0,21,44.22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="63.612" Foreground="Black" BorderBrush="#FF707070">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
+                        <GradientStop Color="#6FCCDD" Offset="0"/>
+                        <GradientStop Color="DarkBlue" Offset="5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="button_forgotpassword" Content="Forgot Password&#xD;&#xA;" Height="24.5" Margin="193.991,0,199.603,65.72" VerticalAlignment="Bottom" Foreground="Black" BorderBrush="#FF707070">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
+                        <GradientStop Color="#6FCCDD" Offset="0"/>
+                        <GradientStop Color="DarkBlue" Offset="5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Image x:Name="image" Source="Image2.png" Height="65.498" Margin="156.623,18.641,144.42,0" VerticalAlignment="Top"/>
+        </Grid>
+    </Viewbox>
+</Window>

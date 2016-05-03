@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfApplication2.InterviewWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="InterviewWindow" Height="350" Width="525"
+        Closing="MainWindow_Closing"
+        KeyDown="Window_KeyDown">
+    <Viewbox StretchDirection="Both" Stretch="Uniform">
+        <Grid Name="main" Width="525" Height="350">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="22*"/>
+                <RowDefinition Height="17*"/>
+                <RowDefinition Height="311*"/>
+            </Grid.RowDefinitions>
+            <Rectangle x:Name="rect_feedback"  Margin="-1047.714,-938.636,-1044.059,-976.124" Opacity="0.4" Grid.RowSpan="3"/>
+            <Rectangle x:Name="rect_screen" Fill="White" Margin="0,5.661,0,-356.217" Grid.Row="1" Grid.RowSpan="2"/>
+            <Label x:Name="label" Content="What are your hobbies?" Margin="10,97.649,10,113.297" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="20" Grid.Row="2"/>
+            <Popup x:Name="popup" AllowsTransparency="True" PlacementTarget="{Binding ElementName=main}" Placement="Center" Margin="131.309,73.067,121.8,113.297" Grid.Row="2">
+                <Grid Background="#FFF3A9CB" HorizontalAlignment="Left" VerticalAlignment="Top" Width="216.667" Height="79.333">
+                    <Label x:Name="lbl_pause" Content="      You are paused! &#xD;&#xA;Hit space to unpause!" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                </Grid>
+            </Popup>
+            <Button x:Name="button_end_interview" Content="End Interview" Height="47.179" Margin="188.441,0,188.44,19.749" VerticalAlignment="Bottom" Click="button_end_interview_click" Grid.Row="2">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
+                        <GradientStop Color="#6FCCDD" Offset="0"/>
+                        <GradientStop Color="DarkBlue" Offset="5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="button_next_question" Content="Next Question!" HorizontalAlignment="Right" Height="46.123" Margin="0,21.944,29.35,0" VerticalAlignment="Top" Width="92.45" Click="button_next_question_click" Grid.Row="2">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
+                        <GradientStop Color="#6FCCDD" Offset="0"/>
+                        <GradientStop Color="DarkBlue" Offset="5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Image x:Name="image" Source="Podium_Hor_Digital_LG_Black.jpeg" Height="36" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="96" Grid.Row="2"/>
+        </Grid>
+    </Viewbox>
+</Window>

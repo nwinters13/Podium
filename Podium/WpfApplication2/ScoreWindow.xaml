@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApplication2.ScoreWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication2"
+        mc:Ignorable="d"
+        Title="ScoreWindow" Height="350" Width="525"  Background="#FF8D8D8D"
+        KeyDown="Window_KeyDown">
+    <Viewbox StretchDirection="Both" Stretch="Uniform">
+        <Grid Width="419.258">
+            <Button x:Name="button_end_interview" Content="Go Back" Height="35" Margin="155,0,152.258,21.812" VerticalAlignment="Bottom" Click="button_end_interview_click">
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
+                        <GradientStop Color="#6FCCDD" Offset="0"/>
+                        <GradientStop Color="DarkBlue" Offset="5"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Label x:Name="label_goodjob" Content="Great Job Friend!" Height="64.693" Margin="0,19.919,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="26.667" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF6FCCDD"/>
+            <Label x:Name="label_score_text" Content="Your score:" Margin="0,74.658,0,0" FontWeight="Bold" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" Height="51.897" VerticalAlignment="Top"/>
+            <Label x:Name="label_score" Content="xxx" Margin="0,126.555,0,90.548" FontWeight="Bold" FontSize="24" HorizontalContentAlignment="Center" d:LayoutOverrides="VerticalAlignment"/>
+            <Image x:Name="image" Source="Image2.png" Height="36" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="96"/>
+            <Label x:Name="label_suggestion" Content="Next time try not to " Height="28.736" Margin="23.16,0,23.391,61.812" VerticalAlignment="Bottom" HorizontalContentAlignment="Center"/>
+        </Grid>
+    </Viewbox>
+</Window>
