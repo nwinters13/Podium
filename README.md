@@ -1,14 +1,16 @@
 # Rekinect
-### Created by Nate Winters, Alex Kasemir, Walton Lee, Matt Long
-### 2015-2016 Tufts Senior Design Project
-### **Sponsor:** Danielle Feerst and Podium
+**Created by: Nate Winters, Alex Kasemir, Walton Lee, Matt Long**
+**2015-2016 Tufts Senior Design Project**
+**Sponsor: Danielle Feerst and Podium**
 
  What is it?
   -----------
   Podium is an application created to practice interviews. The application was
   created using the Microsoft Kinect. While practicing an interview, the Kinect
-  will provide feedback for the user and offer suggestions for improving their
-  interviewing skills!
+  will track the users body position and offer suggestions for improving their
+  interviewing skills! After the interview, the user will rate themselves on 
+  their skill, and the application will provide the user with a score based on
+  how they performed in the interview.
 
   This application was originally designed to run alongside an iPad application
   created by Danielle Feerst and her team at Podium. The application was 
