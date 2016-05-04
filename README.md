@@ -1,7 +1,7 @@
 # Rekinect
-**Created by: Nate Winters, Alex Kasemir, Walton Lee, Matt Long**
-**2015-2016 Tufts Senior Design Project**
-**Sponsor: Danielle Feerst and Podium**
+**Created by: Nate Winters, Alex Kasemir, Walton Lee, Matt Long**  
+**2015-2016 Tufts Senior Design Project**  
+**Sponsor: Danielle Feerst and Podium**  
 
  What is it?
   -----------
@@ -18,14 +18,15 @@
   and rate themselves on their perceived performance. The Kinect application
   provides a quantitative score to go along with the qualitative self-rating.
 
-  Requirements
+ Requirements
   ------------
   * Windows Computer
   * Visual Studios
-  * Microsoft Kinect
+  * Microsoft Kinect  
 
-  Documentation
-  -------------
+
+ Documentation
+  ------------
 
   The documentation available as of the date of this release is 
   https://github.com/nwinters13/Podium/blob/master/ReKinect_Usability_Instructions.md.
