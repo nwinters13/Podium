@@ -20,13 +20,12 @@
 
  Requirements
   ------------
-  * Windows Computer
-  * Visual Studios
-  * Microsoft Kinect  
+  * Windows Computer  
+  * Visual Studios  
+  * Microsoft Kinect
 
-
- Documentation
-  ------------
+Documentation
+  -------------
 
   The documentation available as of the date of this release is 
   https://github.com/nwinters13/Podium/blob/master/ReKinect_Usability_Instructions.md.
