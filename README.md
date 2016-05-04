@@ -1,7 +1,7 @@
 # Rekinect
-## Created by Nate Winters, Alex Kasemir, Walton Lee, Matt Long
-## 2015-2016 Tufts Senior Design Project
-## **Sponsor:** Danielle Feerst and Podium
+### Created by Nate Winters, Alex Kasemir, Walton Lee, Matt Long
+### 2015-2016 Tufts Senior Design Project
+### **Sponsor:** Danielle Feerst and Podium
 
  What is it?
   -----------
