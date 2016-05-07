@@ -38,6 +38,7 @@ namespace WpfApplication2
             window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
             window.isPauseEnabled = this.isPauseEnabled;
             window.isFeedbackEnabled = this.isFeedbackEnabled;
+            window.user_email = this.user_email;
             window.Show();
             this.Close();
         }

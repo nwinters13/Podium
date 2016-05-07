@@ -33,7 +33,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="button_history" Content="History" HorizontalAlignment="Left" Height="39.498" Margin="116.027,0,0,89.968" VerticalAlignment="Bottom" Width="120.689" Foreground="Black">
+            <Button x:Name="button_history" Content="History" HorizontalAlignment="Left" Height="39.498" Margin="116.027,0,0,89.968" VerticalAlignment="Bottom" Width="120.689" Foreground="Black" Click="button_history_Click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
                         <GradientStop Color="#6FCCDD" Offset="0"/>

@@ -61,3 +61,5 @@ C:\Users\nwinters\Documents\Capstone\ReKinect\Podium\WpfApplication2\obj\Debug\S
 C:\Users\nwinters\Documents\Capstone\ReKinect\Podium\WpfApplication2\obj\Debug\WpfApplication2.g.resources
 C:\Users\nwinters\Documents\Capstone\ReKinect\Podium\WpfApplication2\obj\Debug\WpfApplication2.Properties.Resources.resources
 C:\Users\nwinters\Documents\Capstone\ReKinect\Podium\WpfApplication2\obj\Debug\WpfApplication2.csproj.GenerateResource.Cache
+C:\Users\nwinters\Documents\Capstone\ReKinect\Podium\WpfApplication2\obj\Debug\HistoryWindow.g.cs
+C:\Users\nwinters\Documents\Capstone\ReKinect\Podium\WpfApplication2\obj\Debug\HistoryWindow.baml

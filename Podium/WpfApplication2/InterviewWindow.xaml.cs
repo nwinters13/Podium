@@ -22,6 +22,9 @@ namespace WpfApplication2
         /// </summary>
         public partial class InterviewWindow : Window, INotifyPropertyChanged
         {
+
+            public string user_email;
+
             /// <summary> Active Kinect sensor </summary>
             private KinectSensor kinectSensor = null;
 
@@ -68,6 +71,7 @@ namespace WpfApplication2
                 timer.Tick += timer_Tick;
                 timer.Start();
 
+                user_email = "";
 
                 // only one sensor is currently supported
                 this.kinectSensor = KinectSensor.GetDefault();
@@ -309,6 +313,7 @@ namespace WpfApplication2
                 window.WindowState = WindowState.Maximized;
             }
             window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            window.user_email = this.user_email;
 
             string gesture_name = "";
 

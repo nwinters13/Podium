@@ -58,6 +58,9 @@
     </ApplicationDefinition>
     <Compile Include="GestureDetector.cs" />
     <Compile Include="GestureResultView.cs" />
+    <Compile Include="HistoryWindow.xaml.cs">
+      <DependentUpon>HistoryWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="InterviewWindow.xaml.cs">
       <DependentUpon>InterviewWindow.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
     <Compile Include="SelfscoreWindow.xaml.cs">
       <DependentUpon>SelfscoreWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="HistoryWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="OptionsWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

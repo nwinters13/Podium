@@ -18,7 +18,8 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <DataGrid x:Name="dataGrid" Margin="64.501,74.974,64.783,105.329"/>
+            <DataGrid x:Name="dataGrid_history" Margin="10,74.974,10,105.329" HorizontalContentAlignment="Center" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Disabled">
+            </DataGrid>
         </Grid>
     </Viewbox>
 </Window>

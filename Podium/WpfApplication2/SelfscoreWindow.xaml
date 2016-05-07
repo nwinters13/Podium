@@ -8,7 +8,7 @@
         Title="SelfscoreWindow" Height="350" Width="525" Background="#FF8D8D8D">
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Width="525" Height="350">
-            <TextBox x:Name="textBox" Margin="118.457,40.408,117.88,0" TextWrapping="Wrap" Height="50.865" VerticalAlignment="Top">
+            <TextBox x:Name="textbox_didwell" Margin="118.457,40.408,117.88,0" TextWrapping="Wrap" Height="50.865" VerticalAlignment="Top">
                 <TextBox.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="White" Offset="0"/>
@@ -17,7 +17,7 @@
                 </TextBox.Background>
             </TextBox>
             <Label x:Name="label" Content="What do you feel you did well?" Height="28.974" Margin="175.025,9.054,176.331,0" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-            <TextBox x:Name="textBox_Copy" Margin="118.457,136.664,117.88,159.784" TextWrapping="Wrap">
+            <TextBox x:Name="textbox_improve" Margin="118.457,136.664,117.88,159.784" TextWrapping="Wrap">
                 <TextBox.Background>
                     <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                         <GradientStop Color="White" Offset="0"/>
@@ -37,7 +37,7 @@
             </Button>
             <Image x:Name="image" Source="Images/PodiumIcon.png" Height="36" Margin="10,0,0,10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="96"/>
             <DockPanel VerticalAlignment="Bottom" Margin="118.457,0,10,86.193">
-                <TextBox Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Left" Width="104.368" Background="#FF8D8D8D" BorderBrush="#FF8D8D8D" />
+                <TextBox x:Name="textbox_selfscore" Text="{Binding ElementName=slValue, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Left" Width="104.368" Background="#FF8D8D8D" BorderBrush="#FF8D8D8D" />
                 <Slider Maximum="10" TickPlacement="BottomRight" TickFrequency="1" IsSnapToTickEnabled="True" Name="slValue" Width="292.175" />
             </DockPanel>
         </Grid>
