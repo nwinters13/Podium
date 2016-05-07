@@ -144,6 +144,12 @@ namespace WpfApplication2 {
             return;
             case 5:
             this.button_history = ((System.Windows.Controls.Button)(target));
+            
+            #line 36 "..\..\HomeWindow.xaml"
+            this.button_history.Click += new System.Windows.RoutedEventHandler(this.button_history_Click);
+            
+            #line default
+            #line hidden
             return;
             case 6:
             this.image = ((System.Windows.Controls.Image)(target));

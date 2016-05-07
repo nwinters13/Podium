@@ -15,12 +15,14 @@ namespace WpfApplication2
     {
         public bool isPauseEnabled;
         public bool isFeedbackEnabled;
+        public string user_email;
 
         public HomeWindow()
         {
             InitializeComponent();
             isPauseEnabled = true;
             isFeedbackEnabled = true;
+            user_email = "";
         }
 
         // The button to start the interview, passes forward the options
@@ -54,6 +56,20 @@ namespace WpfApplication2
             window.home = this;
             window.updateForm();
             window.Show();
+        }
+
+        private void button_history_Click(object sender, RoutedEventArgs e)
+        {
+            HistoryWindow window = new HistoryWindow();
+            window.Width = this.ActualWidth;
+            window.Height = this.ActualHeight;
+            if (this.WindowState == WindowState.Maximized)
+            {
+                window.WindowState = WindowState.Maximized;
+            }
+            window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
+            window.Show();
+            window.getHistory(user_email);
         }
     }
 }
