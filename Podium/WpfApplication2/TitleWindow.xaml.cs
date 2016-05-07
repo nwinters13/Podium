@@ -67,6 +67,7 @@ namespace WpfApplication2
                             if (phash == System.Text.Encoding.Default.GetString(hash))
                             {
                                 HomeWindow window = new HomeWindow();
+                                window.user_email = email;
                                 window.Width = this.ActualWidth;
                                 window.Height = this.ActualHeight;
                                 if (this.WindowState == WindowState.Maximized)
