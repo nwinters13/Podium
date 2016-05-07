@@ -26,7 +26,7 @@
             </PasswordBox>
             <Label x:Name="label_email" Content="Email" Margin="112.888,98.575,0,0" BorderBrush="Black" BorderThickness="1,1,0,1" Height="30" VerticalAlignment="Top" d:LayoutOverrides="Height" HorizontalAlignment="Left" Width="80" HorizontalContentAlignment="Right" Background="#FF6FCCDD" Foreground="Black"/>
             <Label x:Name="label_password" Content="Password" Margin="112.888,148,0,0" BorderBrush="Black" BorderThickness="1,1,0,1" HorizontalAlignment="Left" Width="80" HorizontalContentAlignment="Right" Background="#6FCCDD" VerticalAlignment="Top" Height="27.96"  Foreground="Black"/>
-                <Button x:Name="button_login" Content="Log In" Height="24.5" Margin="223.388,0,230,104" VerticalAlignment="Bottom" Click="button_login_Click" Foreground="Black" BorderBrush="#FF707070">
+            <Button x:Name="button_login" Content="Log In" Height="24" Margin="197,0,197,104" VerticalAlignment="Bottom" Click="button_login_Click" Foreground="Black" BorderBrush="#FF707070">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
                         <GradientStop Color="#6FCCDD" Offset="0"/>
@@ -34,7 +34,8 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="button_register" Content="Register" Height="24.5" Margin="0,0,21,44.22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="63.612" Foreground="Black" BorderBrush="#FF707070">
+            <!--
+            <Button x:Name="button_register" Content="Register" Height="24.5" Margin="0,0,21,44.22" VerticalAlignment="Bottom" HorizontalAlignment="Right" Click="button_register_Click" Width="63.612" Foreground="Black" BorderBrush="#FF707070">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
                         <GradientStop Color="#6FCCDD" Offset="0"/>
@@ -42,7 +43,8 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="button_forgotpassword" Content="Forgot Password&#xD;&#xA;" Height="24.5" Margin="193.991,0,199.603,65.72" VerticalAlignment="Bottom" Foreground="Black" BorderBrush="#FF707070">
+            -->
+            <Button x:Name="button_register" Content="Register" Height="24" Margin="224,0,223,66" VerticalAlignment="Bottom" Click="button_register_Click" Foreground="Black" BorderBrush="#FF707070">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
                         <GradientStop Color="#6FCCDD" Offset="0"/>
@@ -51,6 +53,7 @@
                 </Button.Background>
             </Button>
             <Image x:Name="image" Source="Images/PodiumIcon.png" Height="65.498" Margin="156.623,18.641,144.42,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="StatusBox" HorizontalAlignment="Left" Height="23" Margin="80,296,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="375"/>
         </Grid>
     </Viewbox>
 </Window>
