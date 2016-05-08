@@ -38,13 +38,12 @@ namespace WpfApplication2
             SqlConnection c = new SqlConnection(
                    "Server=tcp:podium1.database.windows.net,1433;Database=ReKinect;User ID=podium@podium1;Password=I<3rekinect;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
                    );
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(select, c.ConnectionString); //c.con is the connection string
+            SqlDataAdapter dataAdapter = new SqlDataAdapter(select, c.ConnectionString);
             SqlCommandBuilder commandBuilder = new SqlCommandBuilder(dataAdapter);
 
             DataTable table = new DataTable();
             table.Locale = System.Globalization.CultureInfo.InvariantCulture;
             dataAdapter.Fill(table);
-            dataGrid_history
 
             dataGrid_history.IsReadOnly = true;
             dataGrid_history.ItemsSource = table.DefaultView;
