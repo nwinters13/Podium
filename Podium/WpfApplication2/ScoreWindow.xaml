@@ -9,7 +9,7 @@
         KeyDown="Window_KeyDown">
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Width="419.258">
-            <Button x:Name="button_end_interview" Content="Go Back" Height="35" Margin="155,0,152.258,21.812" VerticalAlignment="Bottom" Click="button_end_interview_click">
+            <Button x:Name="button_end_interview" Content="End Program" Height="35" Margin="155,0,152.258,21.812" VerticalAlignment="Bottom" Click="button_end_interview_click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
                         <GradientStop Color="#6FCCDD" Offset="0"/>

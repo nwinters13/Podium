@@ -67,6 +67,8 @@ namespace WpfApplication2
         // Handles ending the interview
         private void button_end_interview_click(object sender, RoutedEventArgs e)
         {
+            // Commented out for now because of window re-initialization issues
+            /*
             HomeWindow window = new HomeWindow();
             window.Width = this.ActualWidth;
             window.Height = this.ActualHeight;
@@ -75,8 +77,10 @@ namespace WpfApplication2
                 window.WindowState = WindowState.Maximized;
             }
             window.WindowStartupLocation = WindowStartupLocation.CenterScreen;
-
+            
             window.Show();
+            */
+
             this.Close();
         }
     }
