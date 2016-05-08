@@ -9,7 +9,7 @@
     <Viewbox StretchDirection="Both" Stretch="Uniform">
         <Grid Width="525" Height="350">
             <Label x:Name="label" Content="Welcome!" HorizontalAlignment="Left" Height="36.082" Margin="10,10,0,0" VerticalAlignment="Top" Width="195.995" Foreground="Black"/>
-            <Button x:Name="button_startinterview" Content="Start Interview" HorizontalAlignment="Right" Margin="0,89.969,38.127,89.968" Width="182.132" Click="button_startinterview_Click" Foreground="Black">
+            <Button x:Name="button_startinterview" Content="Start Interview" HorizontalAlignment="Right" Margin="0,90,72,90" Width="182" Click="button_startinterview_Click" Foreground="Black">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
                         <GradientStop Color="#6FCCDD" Offset="0"/>
@@ -17,7 +17,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="button_options" Content="Options" HorizontalAlignment="Left" Height="39.498" Margin="116.027,89.969,0,0" VerticalAlignment="Top" Width="120.689" Foreground="Black" Click="button_options_Click">
+            <Button x:Name="button_options" Content="Options" HorizontalAlignment="Left" Height="75" Margin="86,90,0,0" VerticalAlignment="Top" Width="121" Foreground="Black" Click="button_options_Click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
                         <GradientStop Color="#6FCCDD" Offset="0"/>
@@ -25,15 +25,7 @@
                     </LinearGradientBrush>
                 </Button.Background>
             </Button>
-            <Button x:Name="button_questions" Content="Questions" HorizontalAlignment="Left" Margin="116.027,155.252,0,155.251" Width="120.689" Foreground="Black">
-                <Button.Background>
-                    <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
-                        <GradientStop Color="#6FCCDD" Offset="0"/>
-                        <GradientStop Color="DarkBlue" Offset="5"/>
-                    </LinearGradientBrush>
-                </Button.Background>
-            </Button>
-            <Button x:Name="button_history" Content="History" HorizontalAlignment="Left" Height="39.498" Margin="116.027,0,0,89.968" VerticalAlignment="Bottom" Width="120.689" Foreground="Black" Click="button_history_Click">
+            <Button x:Name="button_history" Content="History" HorizontalAlignment="Left" Height="74" Margin="86,0,0,90" VerticalAlignment="Bottom" Width="121" Foreground="Black" Click="button_history_Click">
                 <Button.Background>
                     <LinearGradientBrush EndPoint="0.9,1" StartPoint="0.9,0">
                         <GradientStop Color="#6FCCDD" Offset="0"/>
