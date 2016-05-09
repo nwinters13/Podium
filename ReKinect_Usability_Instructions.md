@@ -1,3 +1,14 @@
+Before trying to run our application, make sure that your computer is
+running 64-bit Windows 8 or higher, and that you have downloaded the
+[Kinect SDK](https://www.microsoft.com/en-us/download/details.aspx?id=44561)
+to ensure you have all the required Kinect software for the application
+to run properly.
+
+To download our application, download this repository and extract it anywhere
+in your computer. In the `Podium/bin/Debug` folder, there is an executable
+called `WpfApplication2` - that is the program. You can either run it from
+inside the folder, or create a shortcut to the application. 
+
 To learn how to use our application, follow the instructions below. We included
 links to screenshots of our application throughout the instructions to help
 ensure that you do not get lost following the instructions. You can also [follow
