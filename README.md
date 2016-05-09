@@ -20,12 +20,10 @@
 
  Requirements
   ------------
-  * Windows Computer  
-  * Visual Studios  
+  * Windows Computer (running 64-bit Windows 8 or higher) 
   * Microsoft Kinect
   * Microsoft Kinect SDK [available here]
 (https://www.microsoft.com/en-us/download/details.aspx?id=44561)
-  * 64-bit Windows 8 or higher
   
 
 Documentation
