@@ -5,8 +5,12 @@ to ensure you have all the required Kinect software for the application
 to run properly.
 
 To download our application, download this repository and extract it anywhere
-in your computer. In the folder, there is a shortcut called `Podium For Kinect`.
-Double-click that shortcut to launch the application.
+in your computer. Open the folder, then navigate into 
+`Podium/WpfApplication2/bin/Debug`. The application is in there under the name
+`WpfApplication2`. You can run the program from there, or right-click on the
+application, click 'Create Shortcut', and place the shortcut anywhere else
+(like your Desktop) to run it. We recommend renaming the shortcut to "Podium for
+Kinect"!
 
 To learn how to use our application, follow the instructions below. We included
 links to screenshots of our application throughout the instructions to help
